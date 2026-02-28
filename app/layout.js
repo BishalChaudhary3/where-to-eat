@@ -13,11 +13,6 @@ export default function RootLayout({ children }) {
 
         {/* Global Background */}
         <FloatingBackground />
-        
-        {/* Soft Overlay */}
-        <div className="fixed inset-0 bg-white/70 backdrop-blur-[1px] -z-5 pointer-events-none" />
-
-
         {/* Main Content */}
         <div className="relative z-10">
           {children}
