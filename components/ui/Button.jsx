@@ -3,9 +3,9 @@ export default function Button({ children, variant = "primary", onClick }) {
       "px-6 py-3 rounded-2xl font-medium transition-all duration-300 ease-in-out";
   
     const styles = {
-      primary: "bg-black text-white hover:bg-gray-500",
+      primary: "bg-transparent text-white hover:bg-gray-500",
       outline:
-        "border border-black hover:bg-gray-200 hover:text-black hover:scale-105",
+        "border border-black hover:bg-gray-500 hover:text-black hover:scale-105",
     };
   
     return (
