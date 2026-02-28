@@ -39,7 +39,7 @@ export default function FloatingBackground() {
   }, []);
 
   return (
-    <div className="absolute inset-0 pointer-events-none">
+    <div className="fixed inset-0 pointer-events-none -z-10">
       {positions.map((pos, index) => {
         const moveX =
           screen.width > 0
@@ -54,7 +54,7 @@ export default function FloatingBackground() {
         return (
           <div
             key={index}
-            className="absolute text-4xl opacity-10 blur-[1px]"
+            className="absolute text-4xl opacity-30 blur-[1px]"
             style={{
               top: `${pos.top}%`,
               left: `${pos.left}%`,
